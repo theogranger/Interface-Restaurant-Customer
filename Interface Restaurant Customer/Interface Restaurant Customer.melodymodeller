@@ -61,33 +61,38 @@
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="c6301cef-3548-4965-b897-ecb8872f35a0"
           name="Operational Entities">
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:OperationalActor"
-            id="8ee0d10a-3296-40dd-88cd-6a80fb40250f" name="Customers"/>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:OperationalActor"
             id="676154e0-78e8-47e4-a46d-c465be565551" name="Cooker"/>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:OperationalActor"
-            id="489f97d2-02ca-4dc2-a347-0c54e63f3adc" name="Server"/>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="5a7c6ab8-28ea-48c7-9073-1ec660dba281"
-            name="Payment terminal"/>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c465bd9c-2ed9-430a-92d5-f7d10f1485ca"
-            name="Command device"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d76dd3bc-0e9d-4374-a5b3-fd114b42855b"
             name="Restaurant">
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="34cfb798-a161-4bf5-8027-1c96e3798080"
-              name="Payment terminal" abstractType="#5a7c6ab8-28ea-48c7-9073-1ec660dba281"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7920d023-549c-4328-aee1-fa08cc44b78e"
+              name="Kitchen" abstractType="#ab7472db-0883-4c8d-ac4b-3a4060781260"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6dd58560-18f3-4fa9-a491-13e8420aaf1a"
               name="Command device" abstractType="#c465bd9c-2ed9-430a-92d5-f7d10f1485ca"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="34cfb798-a161-4bf5-8027-1c96e3798080"
+              name="Payment terminal" abstractType="#5a7c6ab8-28ea-48c7-9073-1ec660dba281"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="171a09a5-b3ce-4051-8913-98ca91f5f618"
               name="Customers" abstractType="#8ee0d10a-3296-40dd-88cd-6a80fb40250f"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="63ab927a-6c72-4de1-89ad-d2106b55bc25"
               name="Server" abstractType="#489f97d2-02ca-4dc2-a347-0c54e63f3adc"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7920d023-549c-4328-aee1-fa08cc44b78e"
-              name="Kitchen" abstractType="#ab7472db-0883-4c8d-ac4b-3a4060781260"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="ab7472db-0883-4c8d-ac4b-3a4060781260"
             name="Kitchen">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="bf7fe848-54ba-4d59-b976-27d39a4b5a36"
               name="Cooker" abstractType="#676154e0-78e8-47e4-a46d-c465be565551"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="87529b6f-319f-4c81-98c5-00b9a887574c"
+              name="Command displayer" abstractType="#8e8f5160-b152-4e33-b839-2c9975b91f1f"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:OperationalActor"
+              id="8ee0d10a-3296-40dd-88cd-6a80fb40250f" name="Customers"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c465bd9c-2ed9-430a-92d5-f7d10f1485ca"
+              name="Command device">
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:OperationalActor"
+                id="489f97d2-02ca-4dc2-a347-0c54e63f3adc" name="Server"/>
+          </ownedEntities>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="5a7c6ab8-28ea-48c7-9073-1ec660dba281"
+              name="Payment terminal"/>
         </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="8e8f5160-b152-4e33-b839-2c9975b91f1f"
+            name="Command displayer"/>
       </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
